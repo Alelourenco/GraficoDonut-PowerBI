@@ -1,0 +1,25 @@
+{
+  "visual": {
+    "name": "DonutWithTotal",
+    "displayName": "Donut Chart with Total",
+    "guid": "DonutWithTotal7C5B4E2A8F9D1E3C",
+    "visualClassName": "DonutWithTotal",
+    "version": "1.0.0.0",
+    "description": "Um gráfico de donut personalizado com exibição total no centro, posição de legenda configurável e cores personalizadas",
+    "supportUrl": "https://github.com/Alelourenco",
+    "gitHubUrl": "https://github.com/Alelourenco"
+  },
+  "apiVersion": "5.3.0",
+  "author": {
+    "name": "Donut Chart with Total",
+    "email": "alexandre.2.lourenco@outlook.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}

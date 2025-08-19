@@ -1,0 +1,7 @@
+{
+  "externalJS": [
+    "node_modules/react/umd/react.production.min.js",
+    "node_modules/react-dom/umd/react-dom.production.min.js",
+    "node_modules/d3/dist/d3.min.js"
+  ]
+}

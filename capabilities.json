@@ -1,0 +1,241 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Categoria",
+      "name": "category",
+      "kind": "Grouping",
+      "requiredTypes": [
+        {
+          "text": true
+        }
+      ]
+    },
+    {
+      "displayName": "Valores",
+      "name": "values",
+      "kind": "Measure",
+      "requiredTypes": [
+        {
+          "numeric": true
+        }
+      ]
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "category": {
+            "max": 1
+          },
+          "values": {
+            "max": 1
+          }
+        }
+      ],
+      "categorical": {
+        "categories": {
+          "select": [
+            {
+              "bind": {
+                "to": "category"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 30000
+            }
+          }
+        },
+        "values": {
+          "select": [
+            {
+              "bind": {
+                "to": "values"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "supportsHighlight": true,
+  "objects": {
+    "total": {
+      "displayName": "Total",
+      "properties": {
+        "show": {
+          "displayName": "Mostrar",
+          "type": {
+            "bool": true
+          }
+        },
+        "label": {
+          "displayName": "Rótulo",
+          "type": {
+            "text": true
+          }
+        },
+        "color": {
+          "displayName": "Cor",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "displayName": "Tamanho do texto",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "legend": {
+      "displayName": "Legenda",
+      "properties": {
+        "show": {
+          "displayName": "Mostrar",
+          "type": {
+            "bool": true
+          }
+        },
+        "position": {
+          "displayName": "Posição",
+          "type": {
+            "enumeration": [
+              {
+                "value": "rightCenter",
+                "displayName": "Centralizar à direita"
+              },
+              {
+                "value": "leftCenter",
+                "displayName": "Centralizar à esquerda"
+              }
+            ]
+          }
+        },
+        "color": {
+          "displayName": "Cor",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "displayName": "Tamanho do texto",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "dataLabels": {
+      "displayName": "Rótulos de dados",
+      "properties": {
+        "show": {
+          "displayName": "Mostrar",
+          "type": {
+            "bool": true
+          }
+        },
+        "color": {
+          "displayName": "Cor",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "displayName": "Tamanho do texto",
+          "type": {
+            "numeric": true
+          }
+        },
+        "showValue": {
+          "displayName": "Mostrar valor",
+          "type": {
+            "bool": true
+          }
+        },
+        "showPercent": {
+          "displayName": "Mostrar percentual",
+          "type": {
+            "bool": true
+          }
+        },
+        "position": {
+          "displayName": "Posição",
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Interno",
+                "value": "inside"
+              },
+              {
+                "displayName": "Externo",
+                "value": "outside"
+              }
+            ]
+          }
+        },
+        "percentDecimals": {
+          "displayName": "Casas decimais (%)",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "donut": {
+      "displayName": "Gráfico Donut",
+      "properties": {
+        "innerRadius": {
+          "displayName": "Raio interno (1-99%)",
+          "type": {
+            "numeric": true
+          }
+        },
+        "showBorders": {
+          "displayName": "Mostrar bordas",
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "dataPoint": {
+      "displayName": "Cores por categoria",
+      "properties": {
+        "fill": {
+          "displayName": "Cor",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "supportsKeyboardFocus": true,
+  "supportsMultiVisualSelection": true,
+  "supportsLandingPage": false,
+  "supportsEmptyDataView": true,
+  "sorting": {
+    "default": {}
+  },
+  "privileges": []
+}
