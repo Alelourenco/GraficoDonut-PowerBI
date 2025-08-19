@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.0",
+		"author": {"name":"Donut Chart with Total","email":"alexandre.2.lourenco@outlook.com"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/DonutWithTotal7C5B4E2A8F9D1E3C.pbiviz.json"
+			}
+		],
+		"visual": {"name":"DonutWithTotal","displayName":"Donut Chart with Total","guid":"DonutWithTotal7C5B4E2A8F9D1E3C","visualClassName":"DonutWithTotal","version":"1.0.0.0","description":"Um gráfico de donut personalizado com exibição total no centro, posição de legenda configurável e cores personalizadas","supportUrl":"https://github.com/Alelourenco","gitHubUrl":"https://github.com/Alelourenco"},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}
